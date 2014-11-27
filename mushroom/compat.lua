@@ -1,24 +1,5 @@
 
--- Redefine grass and dirt nodes
-
-minetest.override_item("default:dirt", {
-	drop = {
-		max_items = 2,
-		items = {
-			{
-				items = {"mushroom:spore1"},
-				rarity = 40,
-			},
-			{
-				items = {"mushroom:spore2"},
-				rarity = 40,
-			},
-			{
-				items = {"default:dirt"},
-			}
-		}
-	}
-})
+-- Redefine grass node to randomly drop mushroom spores
 
 minetest.override_item("default:dirt_with_grass", {
 	drop = {
@@ -26,11 +7,11 @@ minetest.override_item("default:dirt_with_grass", {
 		items = {
 			{
 				items = {"mushroom:spore1"},
-				rarity = 40,
+				rarity = 200,
 			},
 			{
 				items = {"mushroom:spore2"},
-				rarity = 40,
+				rarity = 200,
 			},
 			{
 				items = {"default:dirt"},
